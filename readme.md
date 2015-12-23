@@ -4,25 +4,36 @@
 
 > _[RefluxJS](https://github.com/spoike/refluxjs)_
 
-
-## Implementation
-
-TODO
-
 ## Running
 
+### Step 1:
 Install dependencies with bower and npm. You'll first need to have [bower](http://bower.io/) and [npm](npmjs.org) installed to do so. Then run the following:
 
 ```
-bower install && npm install
+npm install && npm install -g webpack-dev-server && bower install
 ```
 
-This project comes with a grunt task to runs a [`connect`](https://github.com/gruntjs/grunt-contrib-connect) web server and opens up the web browser for you. Just run:
+### Step 2:
+This project builds with webpack. Just run:
 
 ```
-grunt
+webpack
 ```
+
+### Step 3:
+Run:
+
+```
+webpack-dev-server --content-base build/
+```
+
+and visit [http://localhost:8080/](http://localhost:8080/)
+
 
 ## Credit
 
-This TodoMVC application was created by [Mikael Brassman](https://github.com/spoike/refluxjs).
+This TodoMVC application was created by [Mikael Brassman](https://github.com/spoike/refluxjs) and was refactored by [Nolan Li](https://github.com/nolanlee/refluxjs-todo) using React(version 0.14.*), Babel and Webpack.
+
+## License
+
+MIT
